@@ -20,7 +20,7 @@ export const slide = {
   },
   enter: (i) => ({
     x: "0px",
-    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i },
+    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.065 * i },
   }),
   exit: (i) => ({
     x: "80px",

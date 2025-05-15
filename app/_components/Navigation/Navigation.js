@@ -10,6 +10,7 @@ import NavMenuItem from "./NavMenuItem";
 import { menuSlide } from "./animation";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileNavMenuItem from "./MobileNavMenuItem";
+import Logo from "../Logo/Logo";
 
 const navMenuItems = [
   {
@@ -69,17 +70,7 @@ const Navigation = () => {
   return (
     <nav className={styles.navigation}>
       <div className={styles.navigation_container}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <Image
-              src={logo}
-              width={250}
-              height={50}
-              quality={100}
-              alt="Logo Madalina Ion - Avocat"
-            />
-          </Link>
-        </div>
+        <Logo />
 
         <ul className={styles.navigation_menu}>
           {navMenuItems.map((item) => (
@@ -111,7 +102,7 @@ const Navigation = () => {
         </AnimatePresence>
 
         <a href="tel:+4023432342342" className={styles.contact_button}>
-          <FiPhone />
+          <FiPhone className={styles.phone_icon} />
           <span>+40 234 323 42342</span>
         </a>
 

@@ -1,36 +1,44 @@
 .form {
-  min-width: 30rem;
+  width: 90vw;
+  max-width: 65rem;
+  background-color: var(--color-secondary-very-light);
+  color: var(--color-primary-strong);
+}
+
+.inner_form {
+  padding: var(--padding-2xl) var(--padding-xl);
   display: flex;
   flex-direction: column;
-  background-color: #f9f8f5;
-  padding: 5rem 4rem;
-  gap: 2.4rem;
-  color: var(--color-primary-strong);
+  gap: var(--spacing-5);
 }
 
 .input_group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+  gap: var(--spacing-2);
   font-size: var(--font-size-2);
   font-weight: 600;
-  line-height: 2rem;
+  width: 100%;
 }
 
 .control_container {
   display: flex;
-  gap: 2.4rem;
+  gap: var(--spacing-5);
+  flex-grow: 1;
 }
 
 .label {
+  font-size: var(--font-size-3);
 }
 
 .input {
+  font-size: var(--font-size-2);
   font-weight: 400;
-  padding: 1.4rem 1.6rem;
+  padding: var(--padding-md) var(--padding-md-lg);
   background-color: white;
   border: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .error {
@@ -46,7 +54,7 @@
 }
 
 .btn_submit {
-  padding: 2rem;
+  padding: var(--padding-lg);
   margin-top: 1.5rem;
   background-color: var(--color-primary-strong);
   color: #f9f8f5;
@@ -64,46 +72,30 @@
 
 /* MEDIA QUERY */
 
-@media (max-width: 1015px) {
+@media (max-width: 1550px) {
   .form {
-    gap: 1.4rem;
-    padding: 3.5rem 3rem;
-    margin-top: 3rem;
-  }
-  .control_container {
-    flex-direction: column;
-  }
-
-  .input {
-    padding: 0.8rem 1rem;
-    width: 100%;
-  }
-  .btn_submit {
-    font-size: var(--font-size-2);
-    padding: 1.4rem;
+    max-width: 55rem;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1550px) {
   .form {
-    padding: 5rem 4rem;
-    gap: 2.4rem;
-  }
-  .control_container {
-    flex-direction: row;
-  }
-
-  .input {
-    padding: 1.4rem 1.6rem;
-    width: 100%;
-  }
-  .btn_submit {
-    padding: 2rem;
+    max-width: 50rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1060px) {
+}
+
+@media (max-width: 965px) {
+}
+@media (max-width: 530px) {
   .control_container {
     flex-direction: column;
+  }
+}
+@media (max-width: 440px) {
+  .btn_submit {
+    font-size: var(--font-size-1);
   }
 }

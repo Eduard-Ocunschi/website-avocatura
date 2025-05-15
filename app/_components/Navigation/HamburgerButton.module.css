@@ -142,3 +142,31 @@
     display: block;
   }
 }
+
+@media (max-width: 750px) {
+  .btn {
+    width: 35px;
+  }
+
+  .btn span {
+    height: 3px;
+  }
+
+  .btn span + span {
+    margin-top: 19px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .btn {
+    width: 30px;
+  }
+
+  .btn span {
+    height: 2.5px;
+  }
+
+  .btn span + span {
+    margin-top: 19.5px;
+  }
+}

@@ -27,7 +27,6 @@ body {
 }
 
 main {
-  /* max-width: 128rem; */
   margin-left: auto;
   margin-right: auto;
   flex: 1;
@@ -42,25 +41,46 @@ canvas {
   max-width: 100%;
 }
 
-/* header {
+header {
   z-index: 1;
-} */
+}
 
 /* --- CSS VARIABLES --- */
 :root {
   /* COLORS */
-  --color-primary-very-strong: #011828;
+
+  --color-primary-very-strong: #0e0a08;
   --color-primary-strong: #604b33;
   --color-primary-medium: #045f9f;
-  --color-primary-light: #1098f9;
-  --color-secondary-very-light: #f9f8f5;
+  --color-primary-medium-light: #7d6b52;
+  --color-primary-light: #9b8970;
+  --color-primary-very-light: #b8a58d;
+  --color-secondary-very-light: #f1eee6;
+  --color-secondary-very-light2: #f9f8f5;
 
-  --color-black: #2b2b2b;
-  --color-grey-400: #3a3a3a;
-  --color-grey-300: #667085;
-  --color-grey-200: #abb4c7;
+  /* Primary Colors */
+  --color-black: #000000;
+  --color-brown: #604b33;
+
+  /* Greyscale (harmonized with your palette) */
+  --color-grey-900: #1a1a1a;
+  --color-grey-800: #2b2b2b;
+  --color-grey-700: #3a3a3a;
+  --color-grey-600: #4a4a4a;
+  --color-grey-500: #5a5a5a;
+  --color-grey-400: #7a7a7a;
+  --color-grey-300: #a0a0a0;
+  --color-grey-200: #c2c2c2;
   --color-grey-100: #e2e2e2;
-  --color-grey-50: #f8f8f8;
+  --color-grey-50: #f5f5f5;
+
+  /* Background Colors */
+  --color-bg-form: #f9f8f5; /* Your form background */
+  --color-bg-input: #ffffff; /* Your input background */
+
+  /* Text Colors */
+  --color-text-primary: #ffffff; /* On dark backgrounds */
+  --color-text-secondary: #dcd1c4; /* On brown backgrounds */
 
   /* FONT SIZE */
   --font-size-1: 1.4rem;
@@ -70,30 +90,67 @@ canvas {
   --font-size-5: 2.6rem;
   --font-size-6: 3rem;
 
+  /* HEADING FONT SIZE */
+
+  --font-heading-1: clamp(
+    3rem,
+    3.5vw + 0.7rem,
+    calc(var(--font-size-2) * 5.618)
+  );
+
+  --font-heading-2: clamp(4rem, 3vw + 0.7rem, calc(var(--font-size-2) * 3.618));
+
+  --font-heading-3: clamp(
+    2rem,
+    2.5vw + 0.7rem,
+    calc(var(--font-size-2) * 2.236)
+  );
+
+  --font-heading-4: clamp(
+    1.6rem,
+    2vw + 0.4rem,
+    calc(var(--font-size-2) * 1.618)
+  );
+
+  --font-heading-5: clamp(1.4rem, 1.5vw + 0.2rem, var(--font-size-2));
+
   /* BORDER */
   --border-radius-1: 20px;
   --border-radius-2: 8px;
   --box-shadow-1: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 
   /* PADDING */
-  --padding-xs: 0.4rem; /* 4px */
-  --padding-sm: 0.8rem; /* 8px */
-  --padding-md: 1.6rem; /* 16px */
-  --padding-lg: 2.4rem; /* 24px */
-  --padding-xl: 3.2rem; /* 32px */
-  --padding-2xl: 4.8rem; /* 48px */
-  --padding-3xl: 6.4rem; /* 64px */
+  --padding-xs: 0.4rem;
+  --padding-sm: 0.65rem;
+  --padding-md: 1.05rem;
+  --padding-md-lg: 1.35rem;
+  --padding-lg: 1.7rem;
+  --padding-lg-xl: 2.2rem;
+  --padding-xl: 2.75rem;
+  --padding-xl-2xl: 3.5rem;
+  --padding-2xl: 4.45rem;
+  --padding-2xl-3xl: 5.8rem;
+  --padding-3xl: 7.2rem;
 
   /* SPACING */
-  --spacing-0: 0rem; /* 0px */
-  --spacing-1: 0.4rem; /* 4px */
-  --spacing-2: 0.8rem; /* 8px */
-  --spacing-3: 1.2rem; /* 12px */
-  --spacing-4: 1.6rem; /* 16px */
-  --spacing-5: 2.4rem; /* 24px */
-  --spacing-6: 3.2rem; /* 32px */
-  --spacing-7: 4.8rem; /* 48px */
-  --spacing-8: 6.4rem; /* 64px */
+  --spacing-0: 0rem;
+  --spacing-1: 0.4rem;
+  --spacing-2: 0.65rem;
+  --spacing-3: 1.05rem;
+  --spacing-4: 1.7rem;
+  --spacing-5: 2.75rem;
+  --spacing-6: 4.45rem;
+  --spacing-7: 7.2rem;
+  --spacing-8: 11.65rem;
+
+  /* MARGIN */
+  --margin-xs: 0.4rem;
+  --margin-sm: 0.65rem;
+  --margin-md: 1.05rem;
+  --margin-lg: 1.7rem;
+  --margin-xl: 2.75rem;
+  --margin-2xl: 4.45rem;
+  --margin-3xl: 7.2rem;
 
   /* TRANSITIONS */
   --transition-fast: 0.2s ease;
@@ -102,13 +159,7 @@ canvas {
 }
 
 @media (max-width: 550px) {
-  html {
-    font-size: 48%; /* 1rem = 10px */
-  }
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 30%; /* 1rem = 10px */
-  }
 }

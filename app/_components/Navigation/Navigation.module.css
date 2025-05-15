@@ -1,6 +1,6 @@
 .navigation {
   position: relative;
-  background-color: black;
+  background-color: var(--color-primary-very-strong);
   width: 100%;
   padding: 0 3rem;
   border-bottom: 2px solid var(--color-primary-strong);
@@ -12,10 +12,6 @@
   padding: 2rem 2rem 1.5rem 2rem;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  color: white;
 }
 
 .navigation_menu {
@@ -68,5 +64,23 @@
   }
   .mobile_navigation_menu {
     display: flex;
+  }
+}
+@media (max-width: 360px) {
+  .navigation_container {
+    padding: var(--padding-lg);
+  }
+  .navigation {
+    padding: 0 var(--padding-lg);
+  }
+  .contact_button p,
+  .contact_button span {
+    font-size: var(--font-size-1);
+  }
+}
+
+@media (max-width: 320px) {
+  .phone_icon {
+    display: none;
   }
 }

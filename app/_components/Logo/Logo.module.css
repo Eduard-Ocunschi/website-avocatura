@@ -1,0 +1,22 @@
+.logo p {
+  color: white;
+  font-size: var(--font-heading-4);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mobile {
+  font-size: var(--font-heading-3);
+  display: none;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 550px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
