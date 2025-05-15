@@ -1,0 +1,114 @@
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-400);
+}
+
+main {
+  /* max-width: 128rem; */
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  width: 100%;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* header {
+  z-index: 1;
+} */
+
+/* --- CSS VARIABLES --- */
+:root {
+  /* COLORS */
+  --color-primary-very-strong: #011828;
+  --color-primary-strong: #604b33;
+  --color-primary-medium: #045f9f;
+  --color-primary-light: #1098f9;
+  --color-secondary-very-light: #f9f8f5;
+
+  --color-black: #2b2b2b;
+  --color-grey-400: #3a3a3a;
+  --color-grey-300: #667085;
+  --color-grey-200: #abb4c7;
+  --color-grey-100: #e2e2e2;
+  --color-grey-50: #f8f8f8;
+
+  /* FONT SIZE */
+  --font-size-1: 1.4rem;
+  --font-size-2: 1.6rem;
+  --font-size-3: 1.8rem;
+  --font-size-4: 2.2rem;
+  --font-size-5: 2.6rem;
+  --font-size-6: 3rem;
+
+  /* BORDER */
+  --border-radius-1: 20px;
+  --border-radius-2: 8px;
+  --box-shadow-1: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+
+  /* PADDING */
+  --padding-xs: 0.4rem; /* 4px */
+  --padding-sm: 0.8rem; /* 8px */
+  --padding-md: 1.6rem; /* 16px */
+  --padding-lg: 2.4rem; /* 24px */
+  --padding-xl: 3.2rem; /* 32px */
+  --padding-2xl: 4.8rem; /* 48px */
+  --padding-3xl: 6.4rem; /* 64px */
+
+  /* SPACING */
+  --spacing-0: 0rem; /* 0px */
+  --spacing-1: 0.4rem; /* 4px */
+  --spacing-2: 0.8rem; /* 8px */
+  --spacing-3: 1.2rem; /* 12px */
+  --spacing-4: 1.6rem; /* 16px */
+  --spacing-5: 2.4rem; /* 24px */
+  --spacing-6: 3.2rem; /* 32px */
+  --spacing-7: 4.8rem; /* 48px */
+  --spacing-8: 6.4rem; /* 64px */
+
+  /* TRANSITIONS */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.6s ease;
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 48%; /* 1rem = 10px */
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 30%; /* 1rem = 10px */
+  }
+}

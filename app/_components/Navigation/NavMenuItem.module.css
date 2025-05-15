@@ -1,0 +1,30 @@
+.navigation_menu_item a {
+  position: relative;
+  font-size: var(--font-size-3);
+  text-decoration: none;
+  color: var(--color-grey-50);
+  transition: all 0.3s;
+}
+
+.navigation_menu_item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-primary-strong);
+  transition: width var(--transition-fast);
+}
+
+.navigation_menu_item a:hover::after {
+  width: 100%;
+}
+
+.navigation_menu_item a.active::after {
+  width: 100%;
+}
+
+.navigation_menu_item a.active {
+  border-bottom: 2px solid var(--color-primary-strong);
+}
