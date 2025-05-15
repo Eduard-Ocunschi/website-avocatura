@@ -9,7 +9,8 @@
 
 .navigation_container {
   display: flex;
-  padding: 2rem 2rem 1.5rem 2rem;
+  width: 100%;
+  padding: var(--padding-lg) 0;
   justify-content: space-between;
   align-items: center;
 }
