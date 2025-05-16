@@ -19,6 +19,7 @@ function Form() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <div className={styles.inner_form}>
+        <p className={styles.titlu_form}>Suntem aici pentru a te ajuta!</p>
         <div className={styles.control_container}>
           <div className={styles.input_group}>
             <label htmlFor="name" className={styles.label}>

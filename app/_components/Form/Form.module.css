@@ -12,6 +12,13 @@
   gap: var(--spacing-5);
 }
 
+.titlu_form {
+  font-size: var(--font-size-4);
+  margin: 0 0 2rem 0;
+  font-weight: 600;
+  text-align: center;
+}
+
 .input_group {
   display: flex;
   flex-direction: column;

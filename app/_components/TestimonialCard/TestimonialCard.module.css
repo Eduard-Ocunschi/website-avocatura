@@ -1,0 +1,51 @@
+.container_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.aestetic_and_testimonial {
+  display: flex;
+}
+
+.aestetic_bar {
+  width: 0.2rem;
+  height: 100%;
+  background-color: var(--color-primary-strong);
+}
+
+.client_testimonial {
+  max-width: 30rem;
+  min-height: 18rem;
+}
+
+.text {
+  padding: 1rem;
+  text-align: left;
+  font-size: var(--font-size-1);
+}
+.client {
+  padding: 0 1rem;
+  font-size: var(--font-size-1);
+  font-weight: 600;
+}
+.company {
+  padding: 0 1rem;
+  font-size: var(--font-size-1);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 670px) {
+  .container_item {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow-1);
+    border-top: 2px solid var(--color-primary-strong);
+  }
+  .container_item img {
+    display: none;
+  }
+}
