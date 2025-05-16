@@ -1,5 +1,11 @@
+import Contact from "../_components/Contact/Contact";
+
 function page() {
-  return <h1>CONTACT</h1>;
+  return (
+    <>
+      <Contact />
+    </>
+  );
 }
 
 export default page;

@@ -3,19 +3,19 @@ import TestimonialCard from "../TestimonialCard/TestimonialCard";
 
 const testimonials = [
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elitconsectetur adipiscingelit consectetur adipiscing elit incididunt ut labore et doloremagna aliqua.",
+    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elitconsectetur adipiscingelit consectetur adipiscing elit incididunt ut labore et doloremagna aliqua."',
     client: "Hermione Granger",
     company: "Founder Company S.A.",
     image: "/cabin-001.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elitconsectetur adipiscingelit consectetur adipiscing elit incididunt ut labore et doloremagna aliqua.",
+    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elitconsectetur adipiscingelit consectetur adipiscing elit incididunt ut labore et doloremagna aliqua."',
     client: "Joe Doevinson",
     company: "Company S.A.",
     image: "/cabin-002.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elit incididunt ut tempor consectetur adipiscing elit incididunt ut labore et dolore magna aliqua.",
+    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor consectetur adipiscing elit incididunt ut tempor consectetur adipiscing elit incididunt ut labore et dolore magna aliqua."',
     client: "Mark Twain",
     company: "Founder Company S.A.",
     image: "/cabin-003.jpg",
