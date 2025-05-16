@@ -62,4 +62,7 @@
   .container_item img {
     display: none;
   }
+  .img_container {
+    display: none;
+  }
 }
