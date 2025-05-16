@@ -10,7 +10,7 @@
 }
 
 .aestetic_bar {
-  width: 0.2rem;
+  width: 2px;
   height: 100%;
   background-color: var(--color-primary-strong);
 }
@@ -37,9 +37,9 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 670px) {
+@media (max-width: 570px) {
   .container_item {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 1rem 2rem;
     box-shadow: var(--box-shadow-1);

@@ -27,7 +27,7 @@ function Hero() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container_main}>
-        <div className={`${styles.container_left} ${libreBodoni.className}`}>
+        <div className={`${styles.container_left} ${montserrat.className}`}>
           <h1 className={styles.title}>Titlul Principal al Paginii</h1>
           <h2 className={styles.subtitle}>Subtitlul sectiunii</h2>
           <ul className={styles.list}>
