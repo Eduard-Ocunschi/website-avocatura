@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -2.7px;
   height: 2px;
   width: 0;
   background-color: var(--color-primary-strong);

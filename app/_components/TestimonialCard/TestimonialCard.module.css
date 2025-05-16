@@ -31,6 +31,19 @@
   font-size: var(--font-size-1);
   font-weight: 600;
 }
+
+.img_container {
+  overflow: hidden;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.client_img {
+  transition: all 0.4s;
+}
+.client_img:hover {
+  transform: scale(1.1);
+}
 .company {
   padding: 0 1rem;
   font-size: var(--font-size-1);

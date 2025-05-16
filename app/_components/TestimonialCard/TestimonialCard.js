@@ -14,7 +14,16 @@ function TestimonialCard({ text, client, company, image }) {
           <span className={styles.company}>{company}</span>
         </div>
       </div>
-      <Image src={image} width={200} height={200} alt="Imagine client" />
+
+      <div className={styles.img_container}>
+        <Image
+          className={styles.client_img}
+          src={image}
+          width={200}
+          height={200}
+          alt="Imagine client"
+        />
+      </div>
     </div>
   );
 }
