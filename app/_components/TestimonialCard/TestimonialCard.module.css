@@ -39,7 +39,7 @@
 }
 
 .client_img {
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 .client_img:hover {
   transform: scale(1.1);

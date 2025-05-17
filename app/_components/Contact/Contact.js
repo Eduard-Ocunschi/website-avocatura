@@ -19,8 +19,8 @@ const information = [
   {
     icon: "/phone.svg",
     title: "Numere de telefon",
-    data1: "(257) 388-6895",
-    data2: "(333) 388-4598",
+    data1: "+40 (257) 388-689",
+    data2: "+40 (333) 388-459",
     alt: "Iconita telefon",
   },
   {

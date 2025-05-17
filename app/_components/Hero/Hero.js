@@ -1,9 +1,12 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import bg from "@/public/bg.png";
+import bg2 from "@/public/bg2.jpeg";
+import bg3 from "@/public/bg3.png";
+
 import { Montserrat } from "next/font/google";
 import { Libre_Bodoni } from "next/font/google";
 import Form from "../Form/Form";
+import Navigation from "../Navigation/Navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,10 +22,15 @@ function Hero() {
   return (
     <section className={styles.section_hero}>
       <Image
-        src={bg}
+        src={bg2}
         fill
         alt="Schimba mai tarziu descrierea!!!!!"
-        className={styles.background_img}
+        className={styles.background_img_1}
+      />
+      <Image
+        src={bg3}
+        alt="Schimba mai tarziu descrierea!!!!!"
+        className={styles.background_img_2}
       />
       <div className={styles.overlay}></div>
 

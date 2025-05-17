@@ -10,7 +10,7 @@
 .titles {
   font-size: var(--font-size-5);
   font-weight: 700;
-  color: var(--color-grey-400);
+  color: var(--color-primary-strong);
 }
 
 .area {

@@ -9,6 +9,7 @@
 .mobile {
   font-size: var(--font-heading-3);
   display: none;
+  font-weight: 400;
 }
 
 /* MEDIA QUERY */

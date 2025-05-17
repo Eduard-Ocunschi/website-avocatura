@@ -1,8 +1,10 @@
 .form {
   width: 90vw;
-  max-width: 65rem;
+  max-width: 60rem;
+  /* background-color: #ece9e2; */
   background-color: var(--color-secondary-very-light);
   color: var(--color-primary-strong);
+  box-shadow: black var(--box-shadow-1);
 }
 
 .inner_form {

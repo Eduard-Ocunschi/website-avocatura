@@ -1,10 +1,9 @@
 "use client";
-import Link from "next/link";
+
 import { useState } from "react";
 import styles from "./Navigation.module.css";
 import { FiPhone } from "react-icons/fi";
-import Image from "next/image";
-import logo from "@/public/logo.png";
+
 import HamburgerButton from "./HamburgerButton";
 import NavMenuItem from "./NavMenuItem";
 import { menuSlide } from "./animation";
@@ -33,31 +32,6 @@ const navMenuItems = [
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [windowSize, setWindowSize] = useState(null);
-
-  // useEffect(() => {
-  //   // Resize handler to track window width
-  //   const handleResize = () => {
-  //     setWindowSize(window.innerWidth);
-  //   };
-  //   handleResize();
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, [windowSize]);
-
-  // useEffect(() => {
-  //   if (windowSize === null) return;
-  //   if (windowSize < 1080 && isOpen === true) {
-  //     setIsOpen(false);
-  //   }
-  //   if (windowSize < 1079 && isOpen === true) return;
-
-  //   if (windowSize >= 1080) {
-  //     setIsOpen(true);
-  //   }
-  // }, [windowSize]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -103,7 +77,7 @@ const Navigation = () => {
 
         <a href="tel:+4023432342342" className={styles.contact_button}>
           <FiPhone className={styles.phone_icon} />
-          <span>+40 234 323 42342</span>
+          <span>+40 234 323 423</span>
         </a>
 
         <HamburgerButton isOpen={isOpen} toggleMenu={toggleMenu} />
