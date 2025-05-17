@@ -2,6 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import styles from "./Form.module.css";
+import toast from "react-hot-toast";
 
 function Form() {
   const {
@@ -11,9 +12,18 @@ function Form() {
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
-    reset();
+
+    try {
+      await new Promise((res) => setTimeout(res, 10000));
+      toast.success(
+        "Mesajul a fost trimis cu sucches! Te vom contacta in curand."
+      );
+      reset();
+    } catch (error) {
+      toast.error("Mesajul nu a fost trimis! Te rugăm, încearcă din nou!");
+    }
   };
 
   return (
@@ -101,8 +111,10 @@ function Form() {
             <span className={styles.error}>{errors.message.message}</span>
           )}
         </div>
-        <button className={styles.btn_submit}>
-          Solicită o consultanță gratuită
+        <button className={styles.btn_submit} disabled={isSubmitting}>
+          {isSubmitting
+            ? "Cerere in curs de trimitere..."
+            : "Solicită o consultanță gratuită"}
         </button>
       </div>
     </form>

@@ -1,0 +1,17 @@
+.button {
+  z-index: 50;
+  background-color: var(--color-primary-light);
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-strong);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary-very-light);
+}

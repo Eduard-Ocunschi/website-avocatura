@@ -43,6 +43,7 @@ canvas {
 
 header {
   z-index: 1;
+  /* position: relative; */
 }
 
 /* --- CSS VARIABLES --- */

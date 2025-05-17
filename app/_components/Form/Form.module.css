@@ -78,6 +78,9 @@
 .btn_submit:hover {
   background-color: #8d6e4b;
 }
+.btn_submit:disabled {
+  background-color: var(--color-grey-300);
+}
 
 /* MEDIA QUERY */
 
