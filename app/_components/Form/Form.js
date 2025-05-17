@@ -16,7 +16,7 @@ function Form() {
     console.log(data);
 
     try {
-      await new Promise((res) => setTimeout(res, 10000));
+      await new Promise((res) => setTimeout(res, 2000));
       toast.success(
         "Mesajul a fost trimis cu sucches! Te vom contacta in curand."
       );
