@@ -91,6 +91,10 @@
   .informations {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .titlu {
+    padding: var(--padding-3xl) var(--padding-xs);
+  }
 }
 
 @media (max-width: 350px) {
