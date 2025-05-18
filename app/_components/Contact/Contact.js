@@ -1,11 +1,9 @@
 import Form from "../Form/Form";
 import styles from "./Contact.module.css";
-import { FaPhone } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoMdPin } from "react-icons/io";
-import { FaClock } from "react-icons/fa6";
 import ContactCard from "../ContactCard/ContactCard";
-import Map from "../Map/Map";
+import { Suspense, lazy } from "react";
+import Spinner from "../Spinner/Spinner";
+const Map = lazy(() => import("../Map/Map"));
 
 const information = [
   {
@@ -68,7 +66,9 @@ function Contact() {
           </div>
         </div>
       </section>
-      <Map />
+      <Suspense fallback={<Spinner />}>
+        <Map />
+      </Suspense>
     </>
   );
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useMemo } from "react";
+
 import styles from "./Navigation.module.css";
 import { FiPhone } from "react-icons/fi";
 
@@ -11,27 +13,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import MobileNavMenuItem from "./MobileNavMenuItem";
 import Logo from "../Logo/Logo";
 
-const navMenuItems = [
-  {
-    title: "Acasa",
-    href: "/",
-  },
-  {
-    title: "Despre noi",
-    href: "/despre",
-  },
-  {
-    title: "Servicii",
-    href: "/servicii",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
-];
-
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navMenuItems = useMemo(
+    () => [
+      { title: "Acasa", href: "/" },
+      { title: "Despre noi", href: "/despre" },
+      { title: "Servicii", href: "/servicii" },
+      { title: "Contact", href: "/contact" },
+    ],
+    []
+  );
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -61,6 +54,7 @@ const Navigation = () => {
               exit="exit"
               initial="initial"
               className={styles.mobile_navigation_menu}
+              id="mobile-navigation-menu"
             >
               {navMenuItems.map((item, index) => (
                 <MobileNavMenuItem

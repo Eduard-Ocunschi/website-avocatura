@@ -14,7 +14,6 @@ const logos = [
 ];
 
 const extendedLogos = [...logos, ...logos, ...logos, ...logos];
-console.log(extendedLogos);
 
 const LogoCarousel = () => {
   return (

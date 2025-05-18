@@ -6,7 +6,6 @@ import bg3 from "@/public/bg3.png";
 import { Montserrat } from "next/font/google";
 import { Libre_Bodoni } from "next/font/google";
 import Form from "../Form/Form";
-import Navigation from "../Navigation/Navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,12 +22,16 @@ function Hero() {
     <section className={styles.section_hero}>
       <Image
         src={bg2}
+        // placeholder="blur"
         fill
+        priority
         alt="Schimba mai tarziu descrierea!!!!!"
         className={styles.background_img_1}
       />
       <Image
         src={bg3}
+        priority
+        // placeholder="blur"
         alt="Schimba mai tarziu descrierea!!!!!"
         className={styles.background_img_2}
       />

@@ -13,8 +13,6 @@ function Form() {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
-
     try {
       await new Promise((res) => setTimeout(res, 2000));
       toast.success(
@@ -37,6 +35,8 @@ function Form() {
             </label>
             <input
               id="name"
+              aria-label="Nume"
+              aria-required="true"
               type="text"
               className={styles.input}
               {...register("name", {
@@ -54,6 +54,7 @@ function Form() {
             </label>
             <input
               id="surname"
+              aria-label="Prenume"
               type="text"
               className={styles.input}
               {...register("surname")}
@@ -71,6 +72,8 @@ function Form() {
             </label>
             <input
               id="email"
+              aria-label="Email"
+              aria-required="true"
               type="email"
               className={styles.input}
               {...register("email", {
@@ -88,6 +91,7 @@ function Form() {
             </label>
             <input
               id="phone"
+              aria-label="Telefon"
               type="number"
               className={styles.input}
               {...register("phone")}
@@ -103,6 +107,7 @@ function Form() {
             Mesaj
           </label>
           <textarea
+            aria-label="Mesajul tau"
             id="message"
             className={styles.textarea}
             {...register("message")}

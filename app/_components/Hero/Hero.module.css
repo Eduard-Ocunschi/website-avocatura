@@ -69,7 +69,7 @@
   padding: var(--padding-3xl);
   color: white;
   gap: 4rem;
-  animation: fade-up 0.8s;
+  animation: fade-up 1.1s;
 }
 
 /* KEYFRAME */
@@ -77,11 +77,11 @@
 @keyframes fade-up {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px) scale(0.9);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) scale(1);
   }
 }
 

@@ -15,16 +15,22 @@ export const metadata = {
     default: "Bun venit! | Av. Madalina Ion",
   },
   description: "Descrieret pentru SEO",
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    url: "https://www.avocat-madalinaion.ro",
+    site_name: "Av. Madalina Ion",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ro">
       <body className={mulish.className}>
         <header>
           <Navigation />
         </header>
-        <main>
+        <main aria-label="Main Content">
           <Toaster
             position="top-center"
             gutter={12}

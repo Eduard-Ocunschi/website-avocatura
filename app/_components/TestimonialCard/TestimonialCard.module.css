@@ -47,6 +47,8 @@
 .company {
   padding: 0 1rem;
   font-size: var(--font-size-1);
+  color: var(--color-primary-strong);
+  font-weight: 600;
 }
 
 /* MEDIA QUERIES */
