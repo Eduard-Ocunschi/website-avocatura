@@ -26,7 +26,6 @@
 .info_data {
   font-display: flex;
   flex-direction: column;
-  /* white-space: nowrap; */
 }
 
 .info_data span {

@@ -22,7 +22,6 @@ function Hero() {
     <section className={styles.section_hero}>
       <Image
         src={bg2}
-        // placeholder="blur"
         fill
         priority
         alt="Schimba mai tarziu descrierea!!!!!"
@@ -31,7 +30,6 @@ function Hero() {
       <Image
         src={bg3}
         priority
-        // placeholder="blur"
         alt="Schimba mai tarziu descrierea!!!!!"
         className={styles.background_img_2}
       />

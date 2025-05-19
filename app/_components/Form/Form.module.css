@@ -96,11 +96,6 @@
   }
 }
 
-@media (max-width: 1060px) {
-}
-
-@media (max-width: 965px) {
-}
 @media (max-width: 530px) {
   .control_container {
     flex-direction: column;

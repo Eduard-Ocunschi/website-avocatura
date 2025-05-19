@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./WhatsAppButtonDraggable.module.css";
 
-const phoneNumber = "1234567890"; // Replace with your WhatsApp number
+const phoneNumber = "1234567890";
 const message = "Hello, I need legal assistance.";
 
 export default function WhatsAppButtonDraggable() {
@@ -11,7 +11,7 @@ export default function WhatsAppButtonDraggable() {
     message
   )}`;
 
-  // Start position: 24px from bottom, 24px from right — convert to top/left on mount
+
   const [position, setPosition] = useState({ top: null, left: null });
   const dragging = useRef(false);
   const lastPos = useRef(null);
@@ -20,7 +20,7 @@ export default function WhatsAppButtonDraggable() {
 
   const [isSnapping, setIsSnapping] = useState(false);
 
-  // Convert initial bottom/right to top/left on mount
+ 
   useEffect(() => {
     if (!buttonRef.current) return;
     const btn = buttonRef.current;
@@ -58,7 +58,7 @@ export default function WhatsAppButtonDraggable() {
     let newLeft = position.left + dx;
     let newTop = position.top + dy;
 
-    // Clamp left and top so the button stays in viewport
+    
     newLeft = Math.min(
       Math.max(margin, newLeft),
       viewportWidth - btnWidth - margin
@@ -80,11 +80,11 @@ export default function WhatsAppButtonDraggable() {
     const viewportWidth = window.innerWidth;
     const margin = 10;
 
-    // Snap horizontally: closest side (left or right)
+    
     const centerX = position.left + btnWidth / 2;
     const snapLeft =
       centerX > viewportWidth / 2
-        ? viewportWidth - btnWidth - margin - 12 // add 2px here
+        ? viewportWidth - btnWidth - margin - 12 
         : margin;
 
     setIsSnapping(true);

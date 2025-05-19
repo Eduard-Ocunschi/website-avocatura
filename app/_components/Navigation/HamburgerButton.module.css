@@ -1,10 +1,6 @@
 /* HamburgerButton.module.css */
 
 .btn {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 90%; */
-  /* transform: translate(-50%, -50%); */
   width: 40px;
   height: 46px;
   cursor: pointer;

@@ -17,34 +17,6 @@
   list-style: none;
 }
 
-/* .carousel_wrapper:before,
-.carousel_wrapper:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.carousel_wrapper:before {
-  left: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0),
-    var(--color-primary-strong)
-  );
-}
-
-.carousel_wrapper:after {
-  right: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    var(--color-primary-strong)
-  );
-} */
-
 .logo_item {
   margin: 0 3.5rem;
   width: 15rem;
