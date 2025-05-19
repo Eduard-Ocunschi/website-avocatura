@@ -24,8 +24,8 @@ function Team() {
                 tempor dui sagittis. Orci ac euismod semper.
               </p>
               <p className={styles.quote}>
-                "Nulla condimentum facilisis porta fringilla orci ac euismod
-                adipiscing elit."
+                &quot;Nulla condimentum facilisis porta fringilla orci ac
+                euismod adipiscing elit.&quot;
               </p>
               <div className={styles.list}>
                 <ul className={styles.text_list}>
@@ -67,8 +67,8 @@ function Team() {
                 tempor dui sagittis. Orci ac euismod semper.
               </p>
               <p className={styles.quote}>
-                "Nulla condimentum facilisis porta fringilla orci ac euismod
-                adipiscing elit."
+                &quot;Nulla condimentum facilisis porta fringilla orci ac
+                euismod adipiscing elit.&quot;
               </p>
               <div className={styles.list}>
                 <div className={styles.signature}>
