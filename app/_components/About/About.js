@@ -26,7 +26,7 @@ function About() {
     },
     {
       title: "Te vom indruma la fiecare pas",
-      text: "Aliquam erat volutpat., orci ac euismod semper, nec diam eu diam mattis viverra, quis sollicitudin.",
+      text: "Aliquam erat volutpat., orci ac euismod semper, nec diam  mattis viverra, quis sollicitudin.",
       icon: <GrSafariOption />,
     },
   ];
