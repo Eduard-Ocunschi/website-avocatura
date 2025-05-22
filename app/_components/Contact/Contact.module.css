@@ -13,7 +13,7 @@
     rgba(33, 27, 19, 1) 0%,
     rgba(36, 28, 14, 1) 100%
   );
-  color: var(--color-secondary-very-light2);
+  color: var(--color-secondary-very-light);
   gap: var(--spacing-5);
 }
 
@@ -24,6 +24,7 @@
   text-transform: uppercase;
   justify-self: start;
   padding: var(--padding-3xl) var(--padding-2xl);
+  animation: fade-up 1.1s;
 }
 
 .container {
@@ -31,6 +32,19 @@
   width: 100%;
   justify-content: space-around;
   gap: var(--spacing-6);
+  animation: fade-up 1.1s;
+}
+
+/* KEYFRAME */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
 
 .container_left {

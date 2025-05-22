@@ -1,7 +1,7 @@
 .testimonials_section {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--color-white);
   padding: 7rem 5rem;
   gap: 2rem;
 }

@@ -1,8 +1,8 @@
 .button {
   z-index: 50;
   background-color: var(--color-primary-light);
-  color: white;
-  padding: 12px;
+  color: var(--color-white);
+  padding: 8px;
   min-width: 54px;
   min-height: 54px;
   border-radius: 50%;
@@ -15,5 +15,5 @@
 }
 
 .button:hover {
-  background-color: var(--color-primary-very-light);
+  background-color: var(--color-primary-light);
 }

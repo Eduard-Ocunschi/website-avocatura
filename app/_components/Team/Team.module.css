@@ -2,11 +2,12 @@
   width: 100%;
   background-color: var(--color-primary-strong);
   min-height: 100vh;
-  color: var(--color-secondary-very-light);
+  color: var(--color-secondary-light);
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 4rem;
+  padding: 4rem 4rem 12rem 4rem;
+  border-bottom: 3rem solid var(--color-secondary-light);
 }
 .title {
   text-align: center;
@@ -26,7 +27,7 @@
   display: flex;
   max-width: 90vw;
   justify-content: space-around;
-  background-color: var(--color-secondary-very-light);
+  background-color: var(--color-secondary-light);
   color: var(--color-primary-strong);
   box-shadow: var(--box-shadow-2);
 

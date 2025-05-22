@@ -11,7 +11,6 @@ export default function WhatsAppButtonDraggable() {
     message
   )}`;
 
-
   const [position, setPosition] = useState({ top: null, left: null });
   const dragging = useRef(false);
   const lastPos = useRef(null);
@@ -20,7 +19,6 @@ export default function WhatsAppButtonDraggable() {
 
   const [isSnapping, setIsSnapping] = useState(false);
 
- 
   useEffect(() => {
     if (!buttonRef.current) return;
     const btn = buttonRef.current;
@@ -58,7 +56,6 @@ export default function WhatsAppButtonDraggable() {
     let newLeft = position.left + dx;
     let newTop = position.top + dy;
 
-    
     newLeft = Math.min(
       Math.max(margin, newLeft),
       viewportWidth - btnWidth - margin
@@ -80,11 +77,10 @@ export default function WhatsAppButtonDraggable() {
     const viewportWidth = window.innerWidth;
     const margin = 10;
 
-    
     const centerX = position.left + btnWidth / 2;
     const snapLeft =
       centerX > viewportWidth / 2
-        ? viewportWidth - btnWidth - margin - 12 
+        ? viewportWidth - btnWidth - margin - 12
         : margin;
 
     setIsSnapping(true);
@@ -166,8 +162,8 @@ export default function WhatsAppButtonDraggable() {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
+        width="40"
+        height="40"
         viewBox="0 0 32 32"
         fill="currentColor"
       >

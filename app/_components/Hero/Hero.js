@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import bg2 from "@/public/bg2.jpeg";
-import bg3 from "@/public/bg3.png";
+import bg4 from "@/public/bg4.png";
+import bg5 from "@/public/bg5.jpg";
 
 import { Montserrat } from "next/font/google";
 import { Libre_Bodoni } from "next/font/google";
@@ -21,18 +22,18 @@ function Hero() {
   return (
     <section className={styles.section_hero}>
       <Image
-        src={bg2}
+        src={bg5}
         fill
         priority
         alt="Schimba mai tarziu descrierea!!!!!"
         className={styles.background_img_1}
       />
-      <Image
+      {/* <Image
         src={bg3}
         priority
         alt="Schimba mai tarziu descrierea!!!!!"
         className={styles.background_img_2}
-      />
+      /> */}
       <div className={styles.overlay}></div>
 
       <div className={styles.container_main}>

@@ -1,8 +1,11 @@
 import "@/app/_styles/globals.css";
 import { Mulish } from "next/font/google";
-import Navigation from "./_components/Navigation/Navigation";
+
 import { Toaster } from "react-hot-toast";
+
+import Navigation from "./_components/Navigation/Navigation";
 import WhatsAppButtonDraggable from "./_components/WhatsAppButton/WhatsAppButtonDraggable";
+import Footer from "./_components/Footer/Footer";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -60,6 +63,7 @@ export default function RootLayout({ children }) {
 
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

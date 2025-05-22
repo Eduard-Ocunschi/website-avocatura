@@ -1,5 +1,5 @@
 .logo p {
-  color: white;
+  color: var(--color-white);
   font-size: var(--font-heading-4);
   font-weight: 700;
   letter-spacing: 0.2rem;

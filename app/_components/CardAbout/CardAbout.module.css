@@ -41,7 +41,7 @@
   width: 100%;
   min-width: 40px;
   height: 100%;
-  fill: var(--color-primary-very-light);
-  border: 2px solid var(--color-primary-very-light);
+  fill: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
   padding: 0 2px;
 }

@@ -27,14 +27,14 @@
 
 .logo {
   font-size: 5rem;
-  color: #f9f8f5;
+  color: var(--color-secondary-very-light);
 }
 
 .spin {
   border: 5px solid transparent;
   position: absolute;
   border-radius: 50%;
-  border-left-color: #f9f8f5;
+  border-left-color: var(--color-secondary-very-light);
   animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
 
@@ -46,20 +46,20 @@
 #spinner2 {
   width: 220px;
   height: 220px;
-  border-left-color: #ebe5d9;
+  border-left-color: var(--color-secondary-light);
   animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
 
 #spinner3 {
   width: 240px;
   height: 240px;
-  border-left-color: #af9b83;
+  border-left-color: var(--color-primary-very-light);
 }
 
 #spinner4 {
   width: 260px;
   height: 260px;
-  border-left-color: #9b8970;
+  border-left-color: var(--color-primary-light);
   animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
 }
 
