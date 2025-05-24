@@ -7,6 +7,7 @@ import bg5 from "@/public/bg5.jpg";
 import { Montserrat } from "next/font/google";
 import { Libre_Bodoni } from "next/font/google";
 import Form from "../Form/Form";
+import { useTranslations } from "next-intl";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const libreBodoni = Libre_Bodoni({
   display: "swap",
 });
 
-function Hero() {
+function Hero({ t }) {
   return (
     <section className={styles.section_hero}>
       <Image
@@ -38,19 +39,12 @@ function Hero() {
 
       <div className={styles.container_main}>
         <div className={`${styles.container_left} ${montserrat.className}`}>
-          <h1 className={styles.title}>Titlul Principal al Paginii</h1>
-          <h2 className={styles.subtitle}>Subtitlul sectiunii</h2>
+          <h1 className={styles.title}>{t("title")}</h1>
+          <h2 className={styles.subtitle}>{t("subtitle")}</h2>
           <ul className={styles.list}>
-            <li className={styles.list_item}>
-              &#9472; Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            </li>
-            <li className={styles.list_item}>
-              &#9472; Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-              do eiusmod.
-            </li>
-            <li className={styles.list_item}>
-              &#9472; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
+            <li className={styles.list_item}>&#9472; {t("list1")}</li>
+            <li className={styles.list_item}>&#9472; {t("list2")}</li>
+            <li className={styles.list_item}>&#9472; {t("list3")}</li>
           </ul>
         </div>
         <div className={styles.container_right}>

@@ -12,9 +12,13 @@ import { menuSlide } from "./animation";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileNavMenuItem from "./MobileNavMenuItem";
 import Logo from "../Logo/Logo";
+import LocaleSwitcherWrapper from "../LanguageSwitcher/LocaleSwitcherWrapper";
+import LocaleSwitcherClient from "../LanguageSwitcher/LocaleSwitcherClient";
+import { useLocale } from "next-intl";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const locale = useLocale();
 
   const navMenuItems = useMemo(
     () => [
@@ -38,6 +42,7 @@ const Navigation = () => {
     <nav className={styles.navigation}>
       <div className={styles.navigation_container}>
         <Logo />
+        <LocaleSwitcherClient locale={locale} />
 
         <ul className={styles.navigation_menu}>
           {navMenuItems.map((item) => (

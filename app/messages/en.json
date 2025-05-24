@@ -1,0 +1,9 @@
+{
+  "Hero": {
+    "title": "Main Page Title",
+    "subtitle": "Section Subtitle",
+    "list1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "list2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+    "list3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}

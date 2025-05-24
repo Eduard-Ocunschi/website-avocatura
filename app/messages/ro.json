@@ -1,0 +1,9 @@
+{
+  "Hero": {
+    "title": "Titlul Principal al Paginii",
+    "subtitle": "Subtitlul sectiunii",
+    "list1": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    "list2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
+    "list3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}
