@@ -12,7 +12,6 @@ import { menuSlide } from "./animation";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileNavMenuItem from "./MobileNavMenuItem";
 import Logo from "../Logo/Logo";
-import LocaleSwitcherWrapper from "../LanguageSwitcher/LocaleSwitcherWrapper";
 import LocaleSwitcherClient from "../LanguageSwitcher/LocaleSwitcherClient";
 import { useLocale } from "next-intl";
 
@@ -20,15 +19,34 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const locale = useLocale();
 
-  const navMenuItems = useMemo(
-    () => [
-      { title: "Acasa", href: "/" },
-      { title: "Despre noi", href: "/despre" },
-      { title: "Servicii", href: "/servicii" },
-      { title: "Contact", href: "/contact" },
-    ],
-    []
-  );
+  const navMenuItems = useMemo(() => {
+    const routes = {
+      ro: [
+        { title: "Acasa", href: "/" },
+        { title: "Despre noi", href: "/despre" },
+        { title: "Servicii", href: "/servicii" },
+        { title: "Contact", href: "/contact" },
+      ],
+      en: [
+        { title: "Home", href: "/" },
+        { title: "About Us", href: "/about" },
+        { title: "Services", href: "/services" },
+        { title: "Contact", href: "/contact" },
+      ],
+    };
+
+    return routes[locale];
+  }, [locale]);
+
+  // const navMenuItems = useMemo(
+  //   () => [
+  //     { title: "Acasa", href: "/" },
+  //     { title: "Despre noi", href: "/despre" },
+  //     { title: "Servicii", href: "/servicii" },
+  //     { title: "Contact", href: "/contact" },
+  //   ],
+  //   []
+  // );
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

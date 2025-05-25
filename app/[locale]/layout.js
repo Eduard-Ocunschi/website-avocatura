@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import Navigation from "../_components/Navigation/Navigation";
 import WhatsAppButtonDraggable from "../_components/WhatsAppButton/WhatsAppButtonDraggable";
 import Footer from "../_components/Footer/Footer";
+// import CookieBanner from "../_components/CookieBanner/CookieBanner";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ const mulish = Mulish({
 });
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const baseUrl = "https://website-avocatura.vercel.app"; //SCHIMBA CAND MERGI LIVE
 
   return {
@@ -85,6 +86,7 @@ export default async function LocaleLayout({ children, params }) {
           </main>
           <Footer />
         </NextIntlClientProvider>
+        {/* <CookieBanner /> */}
       </body>
     </html>
   );

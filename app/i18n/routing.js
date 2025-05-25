@@ -11,5 +11,9 @@ export const routing = defineRouting({
       ro: "/despre",
       en: "/about",
     },
+    "/servicii": {
+      ro: "/servicii",
+      en: "/services",
+    },
   },
 });

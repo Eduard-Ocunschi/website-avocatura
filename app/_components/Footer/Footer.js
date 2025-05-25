@@ -4,10 +4,12 @@ import Image from "next/image";
 import { TbBrandInstagram } from "react-icons/tb";
 import { GrFacebookOption } from "react-icons/gr";
 import { ImLinkedin2 } from "react-icons/im";
+import CookieBanner from "../CookieBanner/CookieBanner";
 
 function Footer() {
   return (
     <footer className={styles.footer}>
+      <CookieBanner />
       <div className={styles.footer_info}>
         <div className={styles.top_container}>
           <div className={styles.info_column}>

@@ -6,6 +6,9 @@ import { usePathname } from "next/navigation";
 
 function MobileNavMenuItem({ title, href, index, onClick }) {
   const pathname = usePathname();
+  const cleanPathname = pathname.replace(/^\/(en|ro)(\/|$)/, "/");
+  const isActive = href === cleanPathname;
+
   return (
     <motion.li
       role="none"
@@ -19,7 +22,7 @@ function MobileNavMenuItem({ title, href, index, onClick }) {
       <Link
         role="menuitem"
         href={href}
-        className={`${href === pathname ? styles.active : ""}`}
+        className={`${isActive ? styles.active : ""}`}
         onClick={onClick}
       >
         {title}

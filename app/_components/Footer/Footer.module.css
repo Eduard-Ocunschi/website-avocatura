@@ -3,6 +3,7 @@
   background-color: var(--color-primary-strong);
   color: var(--color-secondary-light);
   font-weight: 300;
+  position: relative;
 }
 
 .footer_info {
