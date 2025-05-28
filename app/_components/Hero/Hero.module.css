@@ -55,10 +55,15 @@
     rgba(0, 0, 0, 0.8) 10%,
     rgba(0, 0, 0, 0.151) 60%
   ); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.8) 5%,
     rgba(255, 255, 255, 0.151) 40%
+  ); */
+  background: linear-gradient(
+    0deg,
+    rgba(96, 75, 51, 0.8) 5%,
+    rgba(96, 75, 51, 0.151) 40%
   );
 }
 
@@ -94,13 +99,13 @@
 }
 
 .title {
-  font-size: var(--font-heading-2);
+  font-size: var(--font-heading-1);
   font-weight: 500;
   padding-bottom: var(--padding-2xl);
 }
 
 .subtitle {
-  font-size: var(--font-heading-3);
+  font-size: var(--font-heading-2);
   font-weight: 400;
   line-height: 150%;
 }

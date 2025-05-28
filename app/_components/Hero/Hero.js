@@ -47,9 +47,9 @@ function Hero({ t }) {
             <li className={styles.list_item}>&#9472; {t("list3")}</li>
           </ul>
         </div>
-        <div className={styles.container_right}>
+        {/* <div className={styles.container_right}>
           <Form />
-        </div>
+        </div> */}
       </div>
     </section>
   );
